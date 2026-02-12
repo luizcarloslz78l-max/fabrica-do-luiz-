@@ -1,33 +1,4 @@
-import streamlit as st
-import google.generativeai as genai
-import os
-import re
-
-# Configuração da página
-st.set_page_config(page_title="Fábrica do Luiz", page_icon="🏗️", layout="wide")
-
-# --- FUNÇÕES AUXILIARES ---
-def limpar_codigo(texto):
-    """Extrai apenas o código Python de dentro de blocos Markdown, se houver."""
-        # O padrão procura por blocos que começam com ```python e terminam com ```
-            padrao = r"```python(.*?)```"
-                match = re.search(padrao, texto, re.DOTALL)
-                    if match:
-                            return match.group(1).strip()
-                                # Se não houver formatação markdown, tenta retornar o texto original limpo
-                                    return texto.replace("```", "").strip()
-
-                                    # --- CONFIGURAÇÃO DA CHAVE ---
-                                    # Busca a chave de API nos Secrets do Streamlit ou variáveis de ambiente
-                                    if 'GEMINI_API_KEY' in st.secrets:
-                                        minha_chave = st.secrets['GEMINI_API_KEY']
-                                        else:
-                                            minha_chave = os.environ.get('GEMINI_API_KEY')
-
-                                            # --- INTERFACE PRINCIPAL ---
-                                            st.title("🏗️ FÁBRICA DO LUIZ")
-                                            st.subheader("Orquestrador de Software com IA Nativa")
-                                            st.markdown("""
+                                      Esta fábrica gera código Python **pronto para uso** para novos aplicativos Streamlit.
                                             Esta fábrica gera código Python **pronto para uso** para novos aplicativos Streamlit.
                                             O código gerado já inclui:
                                             - 🧠 Integração com Gemini
