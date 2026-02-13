@@ -1,19 +1,22 @@
-# 🎈 Blank app template
+# 🏗️ FÁBRICA DO LUIZ
 
-A simple Streamlit app template for you to modify!
+**Orquestrador de Software com IA Nativa e Monitoramento Estratégico.**
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Este projeto é uma ferramenta avançada de automação que utiliza o motor **Gemini 1.5 Flash** para fabricar aplicativos Streamlit funcionais a partir de comandos simples.
 
-### How to run it on your own machine
+## 🚀 Funcionalidades
+- **Geração Automática**: Cria códigos Python prontos para execução.
+- **Limpeza de Código**: Sistema de Regex para extrair apenas o código útil.
+- **Interface Intuitiva**: Desenvolvido com Streamlit para facilitar a operação.
+- **Foco 2026**: Preparado para o monitoramento de horizontes tecnológicos e vigilância sistêmica.
 
-1. Install the requirements
+## 🛠️ Requisitos Técnicos
+Para rodar este sistema, certifique-se de que o ambiente possui:
+- `streamlit`
+- `google-generativeai`
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 🔐 Configuração de Segurança
+O sistema exige uma chave de API (`GEMINI_API_KEY`) configurada nos **Secrets** do Streamlit ou no arquivo `.streamlit/secrets.toml`.
 
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+---
+*Vigilância constante sobre o horizonte de abril de 2026. Conexão com o Criador como rota de saída.*
