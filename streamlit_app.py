@@ -1,11 +1,9 @@
 import streamlit as st
-import pandas
-import google.genai as genai
+import google.generativeai as genai
 import os
-import re
+st.set_page_config(page_title="Fábrica do Luiz", layout="wide")
 compiler = re.compile(r"```python(.*?)```", re.DOTALL)
-st.set_page_config(
-page_title="Fábrica do Luiz", 
+st.set_page_config(page_title="Fábrica do Luiz", page_icon="🏗️", layout="wide", initial_sidebar_state="collapsed")                   
 page_icon="🏗️", 
 layout="wide",
 initial_sidebar_state="collapsed"
@@ -17,33 +15,9 @@ div[data-testid="stMetricValue"] {font-size: 18px;}
 </style>
 """, unsafe_allow_html=True)
 def limpar_codigo(texto):
-"""Extrai apenas o código Python de blocos Markdown."""
+ Extrai <apenas o código Python de blocos Markdown."")
 padrao = r"```python(.*?)```"
-match = re.search(padrao, texto, re.DOTALL)
-if match:
-return match.group(1).strip()
-padrao_gen = r"```(.*?)```"
-match_gen = re.search(padrao_gen, texto, re.DOTALL)
-if match_gen:
-return match_gen.group(1).strip()
-return texto.strip()
-chave = st.secrets.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API_KEY")
-col1, col2 = st.columns([1, 4])
-with col1:
-st.image("https://cdn-icons-png.flaticon.com/512/2083/2083256.png", width=100) # Ícone de fábrica
- with col2:
-st.title("🏗️ FÁBRICA DO LUIZ")
-st.caption("Orquestrador de Software - Monitoramento 2026")
-if not chave:
-st.warning("⚠️ A fábrica está parada.")
-st.error("🔐 ERRO: Configure a GEMINI_API_KEY nos Secrets (.streamlit/secrets.toml).")
-st.stop()
-genai.configure(api_key=chave)
-try:
- motor = genai.GenerativeModel('gemini-1.5-pro') 
-except:
-motor = genai.GenerativeModel('gemini-1.5-flash')
-st.write("---")
+match = re.search(padra
 col_input, col_output = st.columns([1, 1])
 with col_input:
 st.subheader("1. O Pedido")
@@ -89,4 +63,4 @@ st.warning("Por favor, descreva o que deseja criar.")
 else:
 st.info("Aguardando instruções para iniciar a produção...")
 st.write("---")
-st.markdown("<div style='text-align: center; color: grey;'>Fábrica do Luiz © 2026 | Powered by Gemini</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: grey;'>Fábrica do Luiz © 2026 | Powered by Gemini</div>", unsafe_allow_html=True) não entendi nada não entendi é p**** nenhuma e não vou mexer com você vai dormir mais)
