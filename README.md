@@ -1,22 +1,16 @@
 # 🏗️ FÁBRICA DO LUIZ
+**Orquestrador de Software - Monitoramento 2026**
 
-**Orquestrador de Software com IA Nativa e Monitoramento Estratégico.**
+Este é o arquivo principal da Fábrica, configurado para gerar aplicativos Streamlit usando o motor Gemini 1.5 Pro/Flash.
 
-Este projeto é uma ferramenta avançada de automação que utiliza o motor **Gemini 1.5 Flash** para fabricar aplicativos Streamlit funcionais a partir de comandos simples.
+## 🚀 Funções do Sistema
+- **Engenharia de Prompt**: Instruções sênior para gerar códigos completos.
+- **Limpeza de Blocos**: Extração inteligente de código Python via Regex.
+- **Interface Dual**: Entrada de missões e saída de resultados lado a lado.
+- **Vigilância**: Rodapé integrado para o horizonte de 2026.
 
-## 🚀 Funcionalidades
-- **Geração Automática**: Cria códigos Python prontos para execução.
-- **Limpeza de Código**: Sistema de Regex para extrair apenas o código útil.
-- **Interface Intuitiva**: Desenvolvido com Streamlit para facilitar a operação.
-- **Foco 2026**: Preparado para o monitoramento de horizontes tecnológicos e vigilância sistêmica.
-
-## 🛠️ Requisitos Técnicos
-Para rodar este sistema, certifique-se de que o ambiente possui:
+## 🛠️ Requisitos de Instalação
+Certifique-se de que o arquivo `requirements.txt` contém:
 - `streamlit`
 - `google-generativeai`
 
-## 🔐 Configuração de Segurança
-O sistema exige uma chave de API (`GEMINI_API_KEY`) configurada nos **Secrets** do Streamlit ou no arquivo `.streamlit/secrets.toml`.
-
----
-*Vigilância constante sobre o horizonte de abril de 2026. Conexão com o Criador como rota de saída.*
