@@ -1,1 +1,1 @@
- ``` streamlit google-generativeai pandas ```
+import google.generativeai as genai
